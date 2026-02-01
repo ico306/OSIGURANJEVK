@@ -4,20 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OSIGURANJEVK – Najpovoljnije osiguranje u Vinkovcima</title>
-<link rel="icon" type="image/png" href="ikona.png" />
-  
-  <!-- Uključivanje Google Fontova -->
+  <link rel="icon" type="image/png" href="ikona.png" />
+
+  <!-- Google Font: Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <style>
+    * {
+      font-family: 'Playfair Display', serif;
+    }
+
     body {
       margin: 0;
-      font-family: 'Bungee', sans-serif; /* koristimo font Bungee */
-      font-size: 24px;
+      font-size: 22px;
       color: #ffffff;
-      background-image: url('logo-bg.png'); /* pozadina cijele stranice */
+      background-image: url('logo-bg.png');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -31,37 +34,32 @@
       align-items: center;
       text-align: center;
       padding: 20px;
-
-      /* Pozadina headera, ako želiš */
       background-image: url('logo-bg.png');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
     }
 
-    header h1 {
-      font-size: 60px;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 4px #000;
-    }
-
     header p {
-      font-size: 28px;
+      font-size: 32px;
       margin-bottom: 30px;
       text-shadow: 1px 1px 3px #000;
+      font-weight: 500;
+      letter-spacing: 1px;
     }
 
     .btn {
       background: #e10600;
       color: #fff;
-      padding: 15px 30px;
-      font-size: 20px;
+      padding: 16px 42px;
+      font-size: 24px;
       text-decoration: none;
       border-radius: 50px;
       font-weight: 600;
       box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
       transition: background 0.3s, transform 0.2s;
       display: inline-block;
+      letter-spacing: 1px;
     }
 
     .btn:hover {
@@ -82,8 +80,10 @@
     h2 {
       text-align: center;
       margin-bottom: 30px;
-      font-size: 40px;
+      font-size: 44px;
+      font-weight: 600;
       text-shadow: 1px 1px 3px #000;
+      letter-spacing: 1px;
     }
 
     ul {
@@ -93,14 +93,14 @@
     }
 
     ul li {
-      margin: 10px 0;
-      font-size: 20px;
+      margin: 14px 0;
+      font-size: 24px;
       text-shadow: 1px 1px 2px #000;
     }
 
     .contact p {
       text-align: center;
-      font-size: 20px;
+      font-size: 22px;
       margin: 10px 0;
       text-shadow: 1px 1px 2px #000;
     }
@@ -113,22 +113,23 @@
     }
 
     footer {
-      /* Uklonjeno pozadinsko bojanje */
       background: none;
       padding: 20px;
       text-align: center;
       font-size: 20px;
-      font-family: 'Bungee', sans-serif;
-      color: #ffffff; /* boja teksta */
+      color: #ffffff;
+      letter-spacing: 0.5px;
     }
   </style>
 </head>
+
 <body>
+
 <header id="hero">
-  <img src="logo.png" alt="OSIGURANJEVK logo" style="max-width: 420px; width: 90%; margin-bottom: 20px;" />
+  <img src="logo.png" alt="OSIGURANJEVK logo" style="max-width:420px; width:90%; margin-bottom:20px;" />
   <p>NAJPOVOLJNIJE OSIGURANJE ZA TVOJ AUTOMOBIL</p>
-  <a class="btn" href="https://wa.me/385993303300" target="_blank">ZATRAŽI   PONUDU</a>
-  <!-- Facebook logo ispod gumba -->
+  <a class="btn" href="https://wa.me/385993303300" target="_blank">ZATRAŽI PONUDU</a>
+
   <a href="https://www.facebook.com/osiguranjevinkovci" target="_blank" style="display:inline-block; margin-top:10px;">
     <img src="facebook-logo.png" alt="Facebook" style="width:40px; height:auto; filter: grayscale(100%);">
   </a>
@@ -143,9 +144,9 @@
       <li>Stručno savjetovanje</li>
       <li>Korisnička podrška 24/7</li>
     </ul>
-    <!-- Deo sa slikama -->
-    <div style="display: flex; justify-content: center; gap: 40px; margin-top: 40px;">
-      <img src="slika2.png" alt="Slika 2" style="width: 300px; height: 300px; border-radius: 50%; border: 3px solid black; object-fit: cover;">
+
+    <div style="display:flex; justify-content:center; gap:40px; margin-top:40px;">
+      <img src="slika2.png" alt="Slika" style="width:300px; height:300px; border-radius:50%; border:3px solid black; object-fit:cover;">
     </div>
   </div>
 </section>
@@ -155,29 +156,19 @@
     <h2>Kontakt</h2>
     <p><strong>Grad:</strong> Vinkovci</p>
     <p><strong>Adresa:</strong> Josipa Matasovića 8</p>
-    <p><strong>Telefon: <a href="tel:+385993303300" style="color: red; text-decoration: none;">Nazovi odmah!</a></strong></p>
+    <p><strong>Telefon:</strong> <a href="tel:+385993303300" style="color:red; text-decoration:none;">Nazovi odmah!</a></p>
     <p><strong>Email:</strong> osiguranjevk@gmail.com</p>
+
     <iframe
       src="https://www.google.com/maps?q=Josipa%20Matasovi%C4%87a%208%2C%20Vinkovci&output=embed"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
+      loading="lazy">
     </iframe>
   </div>
 </section>
 
-<footer style="background: none; margin: 0; padding: 20px; text-align: center; font-size: 20px; font-family: 'Bungee', sans-serif; color: #ffffff;">
+<footer>
   © 2026 OSIGURANJEVK – Sva prava pridržana
 </footer>
+
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
