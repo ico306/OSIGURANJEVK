@@ -6,7 +6,10 @@
   <title>OSIGURANJEVK – Najpovoljnije osiguranje u Vinkovcima</title>
   <link rel="icon" type="image/png" href="ikona.png" />
 
-  <!-- Google Font: Playfair Display -->
+  <!-- GOOGLE SEO OPIS (NEVIDLJIVO KORISNICIMA) -->
+  <meta name="description" content="Osiguranje za sve vrste vozila u Vinkovcima. Auto, motocikli, teretna i gospodarska vozila. Nalazimo se točno preko puta tehničkog pregleda u Vinkovcima. Brza i povoljna ponuda." />
+
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -46,6 +49,18 @@
       text-shadow: 1px 1px 3px #000;
       font-weight: 500;
       letter-spacing: 1px;
+    }
+
+    .info-call {
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .info-call a {
+      color: #ffffff;
+      text-decoration: underline;
+      font-weight: 600;
     }
 
     .btn {
@@ -120,6 +135,38 @@
       color: #ffffff;
       letter-spacing: 0.5px;
     }
+
+    /* MOBILE OPTIMIZACIJA */
+    @media (max-width: 768px) {
+      body {
+        font-size: 18px;
+      }
+
+      header p {
+        font-size: 22px;
+      }
+
+      .info-call {
+        font-size: 16px;
+      }
+
+      .btn {
+        font-size: 20px;
+        padding: 14px 30px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      ul li {
+        font-size: 20px;
+      }
+
+      footer {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 
@@ -127,11 +174,19 @@
 
 <header id="hero">
   <img src="logo.png" alt="OSIGURANJEVK logo" style="max-width:420px; width:90%; margin-bottom:20px;" />
+
+  <!-- NOVI TEKST S POZIVOM -->
+  <div class="info-call">
+    Saznajte broj vozila na tehničkom pregledu!
+    <a href="tel:032337037">Kliknite ovdje</a>
+  </div>
+
   <p>NAJPOVOLJNIJE OSIGURANJE ZA TVOJ AUTOMOBIL</p>
+
   <a class="btn" href="https://wa.me/385993303300" target="_blank">ZATRAŽI PONUDU</a>
 
   <a href="https://www.facebook.com/osiguranjevinkovci" target="_blank" style="display:inline-block; margin-top:10px;">
-    <img src="facebook-logo.png" alt="Facebook" style="width:40px; height:auto; filter: grayscale(100%);">
+    <img src="facebook-logo.png" alt="Facebook" style="width:40px; height:auto;">
   </a>
 </header>
 
@@ -169,6 +224,24 @@
 <footer>
   © 2026 OSIGURANJEVK – Sva prava pridržana
 </footer>
+
+<!-- STRUCTURED DATA ZA GOOGLE (NEVIDLJIVO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "name": "OSIGURANJEVK",
+  "description": "Osiguranje za sve vrste vozila. Nalazimo se preko puta tehničkog pregleda u Vinkovcima.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Josipa Matasovića 8",
+    "addressLocality": "Vinkovci",
+    "addressCountry": "HR"
+  },
+  "telephone": "+385993303300",
+  "areaServed": "Vinkovci"
+}
+</script>
 
 </body>
 </html>
